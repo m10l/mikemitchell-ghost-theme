@@ -1,0 +1,15 @@
+.global-footer {
+	width: 100%;
+	padding: 1em;
+	text-align: center;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	a {
+		color: $light-grey-blue;
+		text-decoration: none;
+	}
+
+}

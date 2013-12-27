@@ -1,0 +1,10 @@
+{{!-- Pagination on index.hbs --}}
+
+<nav class="pagination" role="pagination">
+    {{#if prev}}
+        <a class="newer-posts" href="{{pageUrl prev}}"></a>
+    {{/if}}
+    {{#if next}}
+        <a class="older-posts" href="{{pageUrl next}}"></a>
+    {{/if}}
+</nav>

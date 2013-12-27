@@ -1,0 +1,9 @@
+{
+  "name": "Grunt for Ghost",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-sass": "*"
+  }
+}

@@ -1,0 +1,81 @@
+{{!< default}}
+
+<div class="home-template__wrapper">
+
+	{{#if @blog.cover}}
+	<div class="home-template__cover" {{#if @blog.cover}} style="background-image: url({{@blog.cover}})"{{/if}}>
+	</div>
+	{{/if}}
+
+	<div class="home-template__content">
+	
+		{{!-- Intro Panel --}}
+
+		<a href="#about" class="js-scroll-to">
+			<section class="intro-panel" id="introPanel">
+
+			    <div class="intro-panel__content" id="introPanelContent">
+		        <h1>{{@blog.title}}<span class="intro-panel__strapline">{{@blog.description}}</span></h1>
+			    </div>
+
+			    <i class="intro-panel__button"></i>
+
+			</section>
+		</a>
+
+		{{!-- About Panel --}}
+
+		<section class="about-panel" id="about">
+
+		    <div class="about-panel__content" id="aboutPanelContent">
+		    	<div class="panel-inner">
+
+		        <p><strong>Hello</strong></p>
+		        <p class="lead">{{> about-snippet}}</p>
+
+						{{#if posts}}
+		        <a href="#blog" class="about-panel__button js-scroll-to">View Latest Blog Posts</a>
+		        {{/if}}
+
+						{{#unless posts}}
+						{{> global-footer}}
+						{{/unless}}
+					</div>
+		    </div>
+
+		</section>
+
+		{{!-- Blog Panel --}}
+
+		{{#if posts}}
+		<section class="blog-panel" id="blog">
+
+			<div class="blog-panel__content js-blog-panel">
+				<div class="panel-inner">
+					<div class="ajax">
+
+							{{!-- Blog Posts List --}}
+
+						<ul class="posts-list">
+							{{#foreach posts}}
+							<li class="posts-list__post">
+								<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+								<h2><a href="{{url}}">{{{title}}}</a></h2>
+							</li>
+							{{/foreach}}
+						</ul>
+
+							{{!-- Blog Posts Pagination --}}
+
+							{{pagination}}
+
+						</div>
+				</div>
+			</div>
+
+		</section>
+		{{/if}}
+
+		{{> global-footer}}
+	</div>
+</div>

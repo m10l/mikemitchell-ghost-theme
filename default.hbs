@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+    
+(｡・ω・)ﾉﾞ
+
+Hello.
+
+Thanks for checking out the source. My blog is powered by Ghost, and the theme can be found on GitHub[https://github.com/m10l/mikemitchell-ghost-theme].
+
+As you can probably tell I like Medium quite a lot, so this site has most definitely been inspired by them. The theme has been designed mostly in-browser, and tested on the latest versions of Safari, Firefox, Chrome and Opera on OS X 10.9, IE 10 on Windows 7 and the latest version of Safari and Chrome on iOS 7
+
+Ghost uses Handlebars as the templating language which is nice to work with, and I've used Sass to generate the CSS for the theme. Sass is awesome. I like to take a modular approach with Sass / CSS and have taken influence from the BEM methodology for naming classes.
+
+Grunt is my best friend when coding, even for simple projects it's fantastic. I've used a couple of tasks to compile my Sass into minified CSS on file modification, and used LiveReload to save me from refreshing manually.
+
+Updates to this thme are pushed via Git and the blog is hosted with Kite[https://www.runkite.com/]. I recommend them highly so far, especially as they're free for your first app!
+
+If you want to talk about anything, feel free to send me an email[hi@mikemitchell.co.uk] or a tweet[http://www.twitter.com/innernets].
+
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="//use.typekit.net/dwg1nbo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/bower_components/google-code-prettify/src/prettify.css" />
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{{body}}}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+
+    <script src="/bower_components/google-code-prettify/src/prettify.js"></script>
+    <script src="/scripts/main.js"></script>
+    {{ghost_foot}}
+</body>
+</html>

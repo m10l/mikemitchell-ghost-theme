@@ -1,0 +1,23 @@
+// ==============================================
+// Normalize CSS
+// ==============================================
+
+@import '../bower_components/normalize-sass/normalize';
+
+// ==============================================
+// Reset default list styling
+// ==============================================
+
+%list-reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+// ==============================================
+// Disable Pointer Events on Scroll (see main.js)
+// ==============================================
+
+.js-scrolling > * {
+  pointer-events: none !important;
+}

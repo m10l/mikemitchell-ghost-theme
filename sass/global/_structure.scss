@@ -1,0 +1,54 @@
+html,
+body {
+	height: 100%;
+}
+
+.home-template__wrapper {
+	height: 100%; width: 100%;
+	overflow: hidden;
+}
+
+.home-template__wrapper {
+	background: url('/images/blue-blur.jpg') no-repeat fixed center;
+	background-size: cover;
+}
+
+.home-template__content {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 20;
+	height: 100%; width: 100%;
+	overflow: auto;
+}
+
+.home-template__cover {
+	position: absolute;
+	top: 0; left:0;
+	z-index: 10;
+	height:100%;
+	width: 100%;
+	background: $dark-blue no-repeat fixed center;
+	background-size: cover;
+	z-index: 10;
+}
+
+// ==============================================
+// Nicolas Gallagher's Clearfix, SASSified
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// ==============================================
+
+%clearfix {
+
+	zoom: 1; // For IE
+
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+	}
+
+	&:after {
+		clear:both;
+	}
+
+}

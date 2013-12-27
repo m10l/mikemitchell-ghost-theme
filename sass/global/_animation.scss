@@ -1,0 +1,60 @@
+// ==============================================
+// Pulsing Animation
+// ==============================================
+
+@-webkit-keyframes pulse {
+  100% { -webkit-transform: scale3d(0.5,0.5,0); }
+}
+
+@-moz-keyframes pulse {
+  100% { -moz-transform: scale3d(0.5,0.5,0); }
+}
+
+@-ms-keyframes pulse {
+  100% { -ms-transform: scale3d(0.5,0.5,0); }
+}
+
+@keyframes pulse {
+  100% { transform: scale3d(0.5,0.5,0); }
+}
+
+// ==============================================
+// Flash Animation
+// ==============================================
+
+@-webkit-keyframes flash {
+  100% { opacity: 0.2; }
+}
+
+@-moz-keyframes flash {
+  100% { opacity: 0.2; }
+}
+
+@-ms-keyframes flash {
+  100% { opacity: 0.2; }
+}
+
+@keyframes flash {
+  100% { opacity: 0.2; }
+}
+
+// ==============================================
+// Ajax Loading Spinner
+// ==============================================
+
+.loading-spinner {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 50%; left: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	border-radius: 20px;
+	background: #fff;
+	opacity: 0.8;
+
+	-webkit-animation: pulse 250ms infinite alternate;
+	   -moz-animation: pulse 250ms infinite alternate;
+	    -ms-animation: pulse 250ms infinite alternate;
+	        animation: pulse 250ms infinite alternate;
+}

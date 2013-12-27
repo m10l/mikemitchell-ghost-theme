@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{> global-header}}
+
+{{#post}}
+<article class="{{post_class}}">
+    
+    <header class="post-header">
+        <h1 class="post-header__title">{{title}}</h1>
+    </header>
+
+    <section class="post__content">
+        {{content}}
+    </section>
+
+</article>
+{{/post}}
+
+{{> global-footer}}

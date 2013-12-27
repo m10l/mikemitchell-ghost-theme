@@ -1,0 +1,19 @@
+{
+  "name": "normalize-sass",
+  "main": "normalize.sass",
+  "author": "Nicolas Gallagher, Petr Parkov",
+  "ignore": [
+    ".gitignore"
+  ],
+  "homepage": "https://github.com/pyp/normalize.sass",
+  "_release": "e861207b14",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e861207b14df46d794a92a644e2dbc39d672772b"
+  },
+  "_source": "git://github.com/pyp/normalize.sass.git",
+  "_target": "*",
+  "_originalSource": "normalize-sass",
+  "_direct": true
+}
